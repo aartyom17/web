@@ -34,7 +34,7 @@
                 class="hacker-img"></div>
         <div class="mt-5">
             <h2 class="text-center mb-4">Add New Post</h2>
-            <form action="profile.html" method="post" id="postForm" class="d-flex flex-column gap-3"
+            <form action="profile.php" method="post" id="postForm" class="d-flex flex-column gap-3"
                 enctype="multipart/form-data">
                 <div class="form-group">
                     <lable class="form-lable" for="postTitle">Post Title</lable><input type="text"

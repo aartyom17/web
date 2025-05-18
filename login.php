@@ -12,11 +12,13 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="mb-4">Login In!</h1>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="/registration.html" class="btn btn-primary">Registration</a>
-                    <a href="/login.html" class="btn btn-primary">Login</a>
-                </div>
+                <h1 class="mb-4">Login</h1>
+                <form action="/registration.php" method="POST" class="d-flex flex-column gap-3">
+                    <input type="text" name="login" class="form-control-hacker-input" placeholder="login">
+                    <input type="password" name="password" class="form-control-hacker-input" placeholder="password">
+                    <button class="btn btn-primary" type="submit" name="submit">Login</button>
+                    <p class="mt-3">Dont have an account?<a href="/registration.php">Registration</a></p>
+                </form>
             </div>
         </div>
     </div>
