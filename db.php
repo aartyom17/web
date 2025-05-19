@@ -7,7 +7,7 @@
 
     $link = mysqli_connect($servername, $username, $password);
     if(!$link){
-        die("Error connect: " . mysqli_connection_error());    
+        die("Error connect: " . mysqli_connect_error());    
     }
     
     $sql = "CREATE DATABASE IF NOT EXISTS $dbName";
