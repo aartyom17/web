@@ -29,6 +29,34 @@ services:
     networks: 
       custom_network:
         ipv4_address: 172.20.0.23
+  # open-appsec-agent:
+  #   image: ghcr.io/openappsec/agent:latest
+  #   container_name: open-appsec-agent
+  #   ipc: host
+  #   environment:
+  #     - registered_server=NGINX
+  #     - AGENT_TOKEN=cp-9100f3d7-32b4-4245-a599-c8c6f4abf55e0ad0c380-3ba4-4921-876d-ba59945d0bb4
+  #   volumes:
+  #     - ./openappsec/config:/etc/cp/conf
+  #     - ./openappsec/data:/etc/cp/data
+  #     - ./openappsec/debug:/etc/cp/nano_agent
+  #   networks:
+  #     - custom_network
+  # open-appsec-nginx:
+  #   image: ghcr.io/openappsec/nginx-attachment:latest
+  #   container_name: open-appsec-nginx
+  #   depends_on:
+  #     - web
+  #     - open-appsec-agent
+  #   ipc: host
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx/web.conf:/etc/nginx/conf.d/default.conf
+  #   networks:
+  #     custom_network:
+  #       ipv4_address: 172.20.0.24
+
 volumes:
   db_data: {}
 networks:
