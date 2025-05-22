@@ -33,7 +33,7 @@
         exit();
     }
 
-    $link = mysqli_connect('127.0.0.1', 'root', 'Thepororo12!', 'first');
+    $link = mysqli_connect('db', 'root', 'Thepororo12!', 'first');
 
     if(isset($_POST['submit'])){
         $login = $_POST['login'];
